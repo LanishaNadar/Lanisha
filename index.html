@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Lanisha Thomas</title>
+  <meta name="title" content="Lanisha Thomas ">
+  <meta name="description" content="This is a personal portfolio html template made by lanisha">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./L.png" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/font/font.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/My.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-1.png">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preloader" data-preloader>
+    <span class="line"></span>
+  </div>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/Logo.png" width="150" height="80" alt="logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/Logo.png" width="150" height="80" alt="logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#service" class="navbar-link" data-nav-link>Hobbies</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li>
+            <a href="#project" class="navbar-link" data-nav-link>Memories</a>
+          </li>
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+          
+
+          
+
+        </ul>
+        
+      </nav>
+      <!-- Music Label and Toggle Switch -->
+       <div style="text-align: center; margin-top: 2px;">
+        <p style=" font-size: 18px; margin-bottom: 5px;">Music</p>
+        <label class="switch">
+            <input type="checkbox" id="musicToggle">
+            <span class="slider round"></span>
+        </label>
+      </div>
+    
+    
+    <!-- Audio -->
+    <audio id="bgMusic" loop>
+        <source src="music.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+      <h2>Explore My World</h2>
+      
+
+      <button class="nav-open-btn btn:hover" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+      </button>
+
+      <div class="overlay" data-overlay data-nav-toggler></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <div class="hero text-center" id="home">
+        <div class="container">
+
+          <div class="banner-outline has-after">
+
+            <div class="hero-banner img-holder has-after" style="--width: 500; --height: 680;" data-tilt>
+              <img src="./assets/images/My.jpg" width="500" height="680" alt="Lanisha Thomas" class="img-cover">
+            </div>
+
+            <span class="span title">Lanisha Thomas</span>
+
+          </div>
+
+          <div class="hero-content">
+          <h1 class="h1 title" style="color: white;">Documenting My Journey...</h1>
+
+            <div class="wrapper">
+              <h3 style="color: white;">
+                Engineer in the making, always learning, always building.
+              </h3>
+            </div>
+          
+          </div>
+
+          <img src="./assets/images/hero-shape-1.png" width="559" height="232" alt="shape" class="shape shape-1">
+
+          <img src="./assets/images/hero-shape-2.png" width="1358" height="497" alt="shape" class="shape shape-2">
+
+        </div>
+      </div>
+ 
+      <!-- 
+        - #ABOUT
+      -->
+      <h2 style="text-align: center; font-size: 5rem; font-weight: bold;">Know About Me</h2>
+
+      <section class="section about" aria-label="about-me" id="about">
+        <div class="container">
+
+          <div class="tab-container">
+
+            <ul class="tab-btn-list">
+
+              <li class="tab-btn-item">
+                <button class="tab-btn title h6 active" data-tab-btn="about">About Me</button>
+              </li>
+
+              <li class="tab-btn-item">
+                <button class="tab-btn title h6" data-tab-btn="skillset">Skillset</button>
+              </li>
+
+              <li class="tab-btn-item">
+                <button class="tab-btn title h6" data-tab-btn="education">Education</button>
+              </li>
+
+            </ul>
+
+            <div class="tab-content active" data-tab-content="about">
+              <div class="grid-list">
+
+                <figure class="about-banner img-holder" style="--width: ; --height: ;" data-tilt>
+                  <img src="./assets/images/about_me.jpg" width="270" height="120" loading="lazy" alt="about banner"
+                    class="img-cover">                    
+                </figure>
+
+                <div class="about-content">
+
+                  <h2 class="h4 title section-title">
+                    A quiet reflection of my journey — a blend of code, curiosity, and creativity..
+                  </h2>
+
+                  <p class="section-text">
+                    “In a world full of algorithms, I choose to be a rhythm.”<br>
+                     I'm a curious coder, a dreamer wired to explore—<br>
+                     “not just to survive, but to shine.”
+                  </p>
+                  <p>
+                    I'm a curious and driven Computer Engineering student fueled by innovation and a love for problem-solving. Whether it’s IoT, smart systems, or intuitive digital interfaces, I thrive on building tech that makes life better. With a strong coding foundation and a creative mindset, I aim to shape tomorrow’s technology—today.
+                  </p>
+                  <br>
+                  <br>
+
+                  <ul class="about-list">
+                    <li class="about-item">
+                      <p class="list-title">Name</p>
+                      <span class="span title h5">Lanisha Thomas</span>
+                    </li>
+              
+                    <li class="about-item">
+                      <p class="list-title">Phone Number</p>
+                      <a href="tel:+919222557733" class="contact-link">+91 92225 57733</a>
+                    </li>
+                  </ul>
+
+                  <ul>
+                    <li class="about-item">
+                      <p class="list-title">Social Network</p>
+
+                      <div class="social-list">
+                        <div class="social-item">
+                          <span>Email</span>
+                          <a href="mailto:lanishathomas7606@gmail.com"><i class="fas fa-envelope"></i></a>
+                        </div>
+                        <div class="social-item">
+                          <span>LinkedIn</span>
+                          <a href="https://linkedin.com/in/..."><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <div class="social-item">
+                          <span>GitHub</span>
+                          <a href="https://github.com/LanishaNadar"><i class="fab fa-github"></i></a>
+                        </div>
+                        <div class="social-item">
+                          <span>Instagram</span>
+                          <a href="https://instagram.com/..."><i class="fab fa-instagram"></i></a>
+                        </div>                            
+                      </div>
+                    </li>
+                  </ul>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="tab-content" data-tab-content="skillset">
+              <div class="grid-list">
+
+                <div class="skill-content">
+
+                  <h2 class="h4 title section-title">
+                    A dynamic blend of passion, purpose, and potential.
+                  </h2>
+
+                  <h3>
+                    Fuelled by curiosity, driven by ambition, and grounded in versatility.
+                    I don't just adapt to change — I thrive in it.
+                  </h3>
+                  <h3>Shaping skills today, crafting opportunities for tomorrow.
+                    The journey of excellence has only just begun.                    
+                  </h3>
+
+                  <ul class="skill-list">
+
+                    <li>
+                      <div class="skill-wrapper">
+                        <span class="span">Website Development</span>
+
+                        <span class="value">85%</span>
+                      </div>
+
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%"></div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="skill-wrapper">
+                        <span class="span">Design UI & UX</span>
+
+                        <span class="value">90%</span>
+                      </div>
+
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="skill-wrapper">
+                        <span class="span">Backend Coding</span>
+
+                        <span class="value">80%</span>
+                      </div>
+
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="skill-wrapper">
+                        <span class="span">Matlab</span>
+
+                        <span class="value">85%</span>
+                      </div>
+
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%">                   
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+
+                </div>
+
+                <figure class="skill-banner img-holder" style="--width: 570; --height: 420;" data-tilt>
+                  <img src="./assets/images/skill.jpg" width="570" height="420" loading="lazy" alt="skill banner"
+                    class="img-cover">
+                </figure>
+
+              </div>
+            </div>
+
+            <div class="tab-content" data-tab-content="education">
+              <div class="education-section">
+                <div class="timeline-container">
+                  <h2>
+                    From academic excellence to real-world learning, each milestone has shaped the engineer I’m becoming.
+                  </h2>
+            
+                  <ul class="timeline-list">
+            
+                    <!-- College -->
+                    <li class="timeline-item left">
+                      <div class="timeline-icon">🎓</div>
+                      <div class="timeline-content">
+                        <h3 class="timeline-institute">Fr. Conceicao Rodrigues College of Engineering</h3>
+                        <h4 class="timeline-title">B.Tech in Computer Engineering</h4>
+                        <span class="timeline-duration">2024 - Present | 9.55 SGPA (Sem 1)</span>
+                        <p class="timeline-text">
+                          Pursuing a major in Computer Engineering with minors in Communication and IoT.
+                        </p>
+                      </div>
+                    </li>
+            
+                    <!-- 12th -->
+                    <li class="timeline-item right">
+                      <div class="timeline-icon">🏫</div>
+                      <div class="timeline-content">
+                        <h3 class="timeline-institute">SIES College of Arts, Science and Commerce</h3>
+                        <h4 class="timeline-title">HSC - Higher Secondary Certificate</h4>
+                        <span class="timeline-duration">2022 - 2024 | 86.17%</span>
+                        <p class="timeline-text">
+                          Subjects: Physics, Chemistry, Biology, Mathematics & IT <br> 
+                          Highlights: Scored 95% in Math and IT | MHT-CET: 97.21 percentile
+                        </p>
+                      </div>
+                    </li>
+            
+                    <!-- 10th -->
+                    <li class="timeline-item left">
+                      <div class="timeline-icon">📘</div>
+                      <div class="timeline-content">
+                        <h3 class="timeline-institute">Our Lady of Good Counsel High School</h3>
+                        <h4 class="timeline-title">SSC - Secondary School Certificate</h4>
+                        <span class="timeline-duration">2012 - 2022 | 91.6%</span>
+                        
+                      </div>
+                    </li>
+            
+                  </ul>
+                  <br>
+                  <br>
+                  <h3>
+                    A solid academic foundation with a focus on STEM, creativity, and discipline.
+                  </h3>
+                </div>
+              </div>
+            </div>
+            
+            <style>
+            .education-section {
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-start;
+              gap: 40px;
+              flex-wrap: wrap;
+            }
+            
+            .timeline-container {
+              flex: 1;
+              position: relative;
+              padding-left: 20px;
+              padding-right: 20px;
+            }
+            
+            .timeline-list {
+              position: relative;
+              margin: 40px 0;
+              padding: 0;
+              list-style: none;
+            }
+            
+            .timeline-list::before {
+              content: "";
+              position: absolute;
+              left: 50%;
+              top: 0;
+              bottom: 0;
+              width: 4px;
+              background: yellow;
+              transform: translateX(-50%);
+            }
+            
+            .timeline-item {
+              position: relative;
+              width: 50%;
+              padding: 20px;
+              box-sizing: border-box;
+            }
+            
+            .timeline-item.left {
+              left: 0;
+              text-align: right;
+            }
+            
+            .timeline-item.right {
+              left: 50%;
+              text-align: left;
+            }
+            
+            .timeline-icon {
+              font-size: 24px;
+              margin-bottom: 10px;
+            }
+            .timeline-title {
+              color: blue;
+            }
+            
+            .timeline-text {
+              color: green;
+            }
+            
+            .timeline-duration {
+              color: red;
+              font-weight: bold;
+            }
+            
+            
+            .education-banner {
+              flex-shrink: 0;
+            }
+            </style>
+            
+
+            
+
+          </div>
+
+        </div>
+      </section>
+            <!-- 
+        - #SERVICE
+      -->
+
+      <section class="service text-center" aria-label="my hobbies" id="service">
+        <h2 style="text-align: center; font-size: 5rem; font-weight: bold;">My Hobbies</h2>
+        <div class="container">
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/Designing.jpg" width="80" height="80" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="card-title">
+                  <a href="#">
+                    Designing
+                  </a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/Drawing.jpg" width="80" height="80" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="card-title">
+                  <a href="#">
+                    Drawing & <br>
+                    Painting
+                  </a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/Baking.jpg" width="80" height="80" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="card-title">
+                  <a href="#">
+                    Baking
+                  </a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/Photo.jpg" width="80" height="80" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="card-title">
+                  <a href="#">
+                    Natre <br>
+                    Photography
+                  </a>
+                </h3>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="section cta" aria-label="work with me">
+        <div class="container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+          <div class="profile-card" >
+            <figure class="card-banner img-holder profile-pic">
+              <img src="./assets/images/client.jpg" alt="Lawin's Cakes & Bakes" class="img-cover">
+            </figure>
+            <div>
+              <p class="title h5 card-title">Lawin's Cakes & Bakes</p>
+            </div>
+          
+            <div>
+              <!-- Additional content here -->
+              <h3 class="section-text text-center" style="margin-top: 10px;">
+                When I'm not coding, I'm capturing cake magic!
+                I manage <strong>Lawin's Cakes & Bakes</strong>—my mom's homegrown cake business,<br>
+                where I style, photograph, and edit sweet creations for Instagram.
+                It's my way of mixing aesthetics with digital storytelling. 🍰📸<br>
+                <a href="https://www.instagram.com/lawincakesnbakes?igsh=cjlwZ3M1d2w2aTI1 " target="_blank" style="color: #d2691e; font-weight: bold;">
+                  Follow @lawinscakesandbakes
+                </a>
+              </h3>   
+            </div>
+        </div>
+      </section>
+
+
+
+
+      <!-- 
+        - #PROJECTS
+      -->
+
+      <section class="section project" aria-label="my latest projects" id="project">
+        <h2 style="text-align: center; font-size: 5rem; font-weight: bold;">Captured Moments</h2>
+        <br>
+        <br>
+
+        <ul class="slider-list" style="width: 200">
+          <li class="slider-item">
+            <div class="project-card text-center">
+
+              <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                <img src="./assets/images/G5.jpg" width="1000" height="763" loading="lazy"
+                  alt="Project poster: Cloud Migration & AWS Services" class="img-cover">
+
+                <div class="hover-text">What's better than appreciating art? Having your bestie capture you doing it.</div>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <p class="card-subtitle">27 June, 2023</p>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li class="slider-item">
+            <div class="project-card text-center">
+
+              <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                <img src="./assets/images/G1.jpg" width="1000" height="763" loading="lazy"
+                  alt="Project poster: Creative & experienced digital design studio" class="img-cover">
+
+                <div class="hover-text">Not lost, just in sync with the chaos of the sea.</div>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <p class="card-subtitle">20 March, 2025</p>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li class="slider-item">
+            <div class="project-card text-center">
+
+              <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                <img src="./assets/images/G2.jpg" width="1000" height="763" loading="lazy"
+                  alt="Project poster: Front End Development & Maintenance" class="img-cover">
+
+                <div class="hover-text">Just a twig… but it made me stop and wonder.</div>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <p class="card-subtitle">5 March, 2024</p>
+
+              </div>
+
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="project-card text-center">
+
+              <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                <img src="./assets/images/G4.jpg" width="1000" height="763" loading="lazy"
+                  alt="Project poster: Full Web Development Project With JavaScript" class="img-cover">
+
+                <div class="hover-text">Posing for one, caught by another</div>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <p class="card-subtitle">23 December, 2024</p>                
+              </div>
+
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="project-card text-center">
+
+              <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                <img src="./assets/images/G3.jpg" width="1000" height="763" loading="lazy"
+                  alt="Project poster: Flutter Framework & Warframe Design" class="img-cover">
+
+                <div class="hover-text">Some moments don't need a filter-the vibes, the outfit, the memories.</div>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <p class="card-subtitle">4 January, 2024</p>
+
+              </div>
+
+            </div>
+          </li>
+
+          
+          
+
+        </ul>
+
+      </section>
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact" aria-label="contact me" id="contact">
+        <div class="container">
+
+          <h2 class="title h2 section-title">Get In Touch</h2>
+
+          <div class="contact-content">
+
+            <form action="./index.html" method="post" class="contact-form">
+
+              <input type="text" name="name" placeholder="Full name" autocomplete="off" required class="input-field">
+
+              <input type="email" name="email_address" placeholder="Email address" autocomplete="off" required
+                class="input-field">
+
+              <input type="tel" name="phone" placeholder="Phone" autocomplete="off" class="input-field">
+
+              <textarea name="message" placeholder="Enter massges" required class="input-field"></textarea>
+
+              <button type="submit" class="btn btn:hover">
+                <span class="span">Send</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </button>
+
+            </form>
+
+            
+            <ul class="contact-list">
+
+              <ul class="about-list">
+                <li class="about-item">
+                  <p class="list-title">Name</p>
+                  <span class="span title h5">Lanisha Thomas</span>
+                </li>
+          
+                <li class="about-item">
+                  <p class="list-title">Phone Number</p>
+                  <a href="tel:+919222557733" class="contact-link">+91 92225 57733</a>
+                </li>
+              </ul>
+
+              <ul>
+                <li class="about-item">
+                  <p class="list-title">Social Network</p>
+
+                  <div class="social-list">
+                    <div class="social-item">
+                      <span>Email</span>
+                      <a href="mailto:lanishathomas7606@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <div class="social-item">
+                      <span>LinkedIn</span>
+                      <a href="https://linkedin.com/in/..."><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div class="social-item">
+                      <span>GitHub</span>
+                      <a href="https://github.com/LanishaNadar"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="social-item">
+                      <span>Instagram</span>
+                      <a href="https://instagram.com/..."><i class="fab fa-instagram"></i></a>
+                    </div>                            
+                  </div>
+                </li>
+              </ul>
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="copyright">
+        Lanisha Thomas
+      </p>
+
+      <a href="#top" class="back-top-btn">
+        <span class="span">Back To Top</span>
+
+        <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+      </a>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor-dot" data-cursor></div>
+  <div class="cursor-outline" data-cursor></div>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
